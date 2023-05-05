@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="kor">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,48 +8,75 @@
     <title>Document</title>
     <style>
         body {
-          font-family: '맑은 고딕', sans-serif;
-          color: #333;
-          background-color: #f7f7f7;
-          margin: 0;
-          padding: 0;
+            font-family: '맑은 고딕', sans-serif;
+            color: #333;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
         }
-        h1, h2 {
-          font-weight: normal;
-          text-align: center;
+
+        h1,
+        h2 {
+            font-weight: normal;
+            text-align: center;
         }
+
         h1 {
-          margin-top: 50px;
-          font-size: 36px;
+            margin-top: 50px;
+            font-size: 36px;
         }
+
         p {
-          font-size: 18px;
-          line-height: 1.5;
-          margin: 0 auto;
-          max-width: 600px;
-          margin-bottom: 20px;
-          text-align: center;
+            font-size: 18px;
+            line-height: 1.5;
+            margin: 0 auto;
+            max-width: 600px;
+            margin-bottom: 20px;
+            text-align: center;
         }
+
         ul {
-          list-style: none;
-          margin: 0 auto;
-          max-width: 400px;
+            list-style: none;
+            margin: 0 auto;
+            max-width: 400px;
         }
+
         li {
-          font-size: 16px;
-          line-height: 1.5;
-          margin-bottom: 10px;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* 이메일 링크 스타일 추가 */
+        a[href^="mailto:"] {
+            color: #dc3545;
+            text-decoration: none;
+        }
+
+        a[href^="mailto:"]:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
     <h1>나의 자기소개</h1>
     <p>안녕하세요! 저는 김보승입니다.</p>
-    <p>단국대학교 소프트웨엉 학생입니다.</p>
+    <p>단국대학교 소프트웨어학과 학생입니다.</p>
     <h2>연락처</h2>
     <ul>
-      <li>이메일: kbskbs1102@gmail.com</li>
-      <li>깃허브: https://github.com/kbskbs1102</li>
+        <li>이메일: <a href="mailto:kbskbs1102@gmail.com">kbskbs1102@gmail.com</a></li>
+        <li>깃허브: <a href="https://github.com/kbskbs1102">https://github.com/kbskbs1102</a></li>
     </ul>
-  </body>
+</body>
+
 </html>
