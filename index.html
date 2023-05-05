@@ -8,94 +8,117 @@
     <title>Document</title>
     <style>
         body {
-            font-family: '맑은 고딕', sans-serif;
-            color: #333;
-            background-color: #f7f7f7;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
         }
-
-        h1,
-        h2 {
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            padding: 1em;
+        }
+        
+        nav {
+            display: flex;
+            align-items: center;
+        }
+        
+        nav a {
+            color: #333;
+            font-weight: bold;
+            margin-right: 1em;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        
+        nav a:hover {
+            color: #6d6d6d;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            color: #333;
             font-weight: normal;
-            text-align: center;
+            margin-top: 0;
         }
-
-        h1 {
-            margin-top: 50px;
-            font-size: 36px;
-        }
-
-        p {
-            font-size: 18px;
-            line-height: 1.5;
+        
+        img {
+            display: block;
             margin: 0 auto;
-            max-width: 600px;
-            margin-bottom: 20px;
-            text-align: center;
+            max-width: 100%;
+            height: auto;
         }
-
+        
         ul {
-            list-style: none;
-            margin: 0 auto;
-            max-width: 400px;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
         }
-
+        
         li {
-            font-size: 16px;
-            line-height: 1.5;
-            margin-bottom: 10px;
+            margin-bottom: 1em;
         }
-
-        a {
-            color: #007bff;
-            text-decoration: none;
+        
+        #index, #intro, #hobby, #interests, #contact {
+            margin: 3em auto;
+            max-width: 600px;
+            text-align: center;
         }
-
-        a:hover {
-            text-decoration: underline;
+        
+        #intro h2, #hobby h2, #interests h2, #contact h2 {
+            border-bottom: 1px solid #eee;
+            margin-bottom: 1em;
+            padding-bottom: 0.5em;
         }
-
-        /* 이메일 링크 스타일 추가 */
-        a[href^="mailto:"] {
-            color: #007bff;
-            text-decoration: none;
-        }
-
-        a[href^="mailto:"]:hover {
-            text-decoration: underline;
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
         }
     </style>
 </head>
 
 <body>
-    <h1>나의 자기소개</h1>
-    <p>보승의 홈페이지에 오신걸 환영합니다!</p>
-   
-    <h2>목차</h2>
-    <ul>
-        <li><a href="#intro">자기소개</a></li>
-        <li><a href="#hobby">취미</a></li>
-        <li><a href="#interests">관심사</a></li>
-    </ul>
+    <header>
+        <h1>나의 자기소개</h1>
+        <p>보승의 홈페이지에 오신걸 환영합니다!</p>
+    </header>
+    <div id="index">
+        <h2>목차</h2>
+        <ul>
+            <li><a href="#intro">자기소개</a></li>
+            <li><a href="#hobby">취미</a></li>
+            <li><a href="#interests">관심사</a></li>
+            <li><a href="#contact">연락처</a></li>
+        </ul>
+    </div>
+    
     <div id="intro">
         <h2>자기소개</h2>
-        <img src="스키.jpg" alt = " 스키">
-        <img src="알림제.jpg">    
+        <img src="스키.jpg" width="400" height="550">
+        <img src="알림제.jpg" width="400" height="215">    
     </div>
     <div id="hobby">
         <h2>취미</h2>
-        <img src="220054-scuderia-ferrari-austrian-gp-2022-race.jpg">
+        <img src="220054-scuderia-ferrari-austrian-gp-2022-race.jpg" width="400" height="215">
         제 취미는 레이싱 경기를 보는 것입니다.
     </div>
     <div id="interests">
         <h2>관심사</h2>
     </div>
-    <h2>연락처</h2>
-    <ul>
-        <li>이메일: <a href="mailto:kbskbs1102@gmail.com">kbskbs1102@gmail.com</a></li>
-        <li>깃허브: <a href="https://github.com/kbskbs1102">https://github.com/kbskbs1102</a></li>
-    </ul>
+    <div id="contact">
+        <h2>연락처</h2>
+        <ul>
+            <li>이메일: <a href="mailto:kbskbs1102@gmail.com">kbskbs1102@gmail.com</a></li>
+            <li>깃허브: <a href="https://github.com/kbskbs1102">https://github.com/kbskbs1102</a></li>
+        </ul>
+    </div>
 </body>
-
+<footer>
+    <p>Copyright © My Name</p>
+</footer>
 </html>
