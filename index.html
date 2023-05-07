@@ -7,84 +7,210 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        
-        header {
-            background-color: #fff;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        header,
+        #index,
+        #intro,
+        #hobby,
+        #interests,
+        #contact {
             display: flex;
-            justify-content: space-between;
-            padding: 1em;
-        }
-        
-        nav {
-            display: flex;
+            flex-direction: column;
             align-items: center;
         }
-        
-        nav a {
+
+        /* 전체적인 스타일 */
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
             color: #333;
+            background-color: #f7f7f7;
+        }
+
+        /* 헤더 */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             font-weight: bold;
-            margin-right: 1em;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        /* 목차 */
+        #index {
+            background-color: #313131;
+            color: #e0e0e0;
+            padding: 1em;
+        }
+
+        #index h2 {
+            color: #fff;
+        }
+
+        #index a {
+            color: #fff;
             text-decoration: none;
-            text-transform: uppercase;
         }
-        
-        nav a:hover {
-            color: #6d6d6d;
+
+        #index a:hover {
+            color: #aaa;
         }
-        
-        h1, h2, h3, h4, h5, h6 {
-            color: #333;
-            font-weight: normal;
-            margin-top: 0;
-        }
-        
-        img {
-            display: block;
-            margin: 0 auto;
-            max-width: 100%;
-            height: auto;
-        }
-        
+
         ul {
-            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            margin: 0;
+            padding: 5px 0;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #666;
+        }
+
+        /* 본문 */
+        figure {
             margin: 0;
             padding: 0;
         }
-        
-        li {
-            margin-bottom: 1em;
+
+        figcaption {
+            font-size: 14px;
+            color: #888;
+            margin-top: 10px;
         }
-        
-        #index, #intro, #hobby, #interests, #contact {
-            margin: 3em auto;
-            max-width: 600px;
-            text-align: center;
+
+        p {
+            margin: 0;
+            padding: 10px 0;
         }
-        
-        #intro h2, #hobby h2, #interests h2, #contact h2 {
-            border-bottom: 1px solid #eee;
-            margin-bottom: 1em;
-            padding-bottom: 0.5em;
+
+        /* 연락처 */
+        ul li {
+            margin: 0;
+            padding: 5px 0;
         }
-        
+
+        /* 푸터 */
         footer {
             background-color: #333;
             color: #fff;
+            padding: 20px;
+        }
+
+        /* 목차 스타일 */
+        #index {
+            background-color: #2d2d2d;
+            border-bottom: 1px solid #333;
+            padding: 20px;
+        }
+
+        #index h2 {
+            color: #cfcfcf;
+        }
+
+        #index ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        #index a {
+            text-decoration: none;
+            color: #cfcfcf;
+            font-size: 18px;
+        }
+
+        #index a:hover {
+            color: #f7f7f7;
+        }
+
+        /* 각 섹션 스타일 */
+        #intro {
+            border-top: 1px solid #333;
+            padding: 20px;
+            background-color: #d5d5d5;
+        }
+
+        #intro figure {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        #intro figcaption {
             text-align: center;
-            padding: 1em;
+        }
+
+        #hobby {
+            border-top: 1px solid #333;
+            padding: 20px;
+            background-color: #e0e0e0;
+        }
+
+        #hobby figure {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        #hobby figcaption {
+            text-align: center;
+        }
+
+        #interests {
+            border-top: 1px solid #333;
+            padding: 20px;
+            background-color: #d5d5d5;
+        }
+
+        #contact {
+            border-top: 1px solid #333;
+            padding: 20px;
+            background-color: #e0e0e0;
+        }
+
+        #contact ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        #contact a {
+            text-decoration: none;
+            color: #2d2d2d;
+            font-size: 18px;
+        }
+
+        #contact a:hover {
+            color: #3d3d3d;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>나의 자기소개</h1>
+        <h1>보승의 자기소개</h1>
         <p>보승의 홈페이지에 오신걸 환영합니다!</p>
     </header>
     <div id="index">
@@ -96,13 +222,13 @@
             <li><a href="#contact">연락처</a></li>
         </ul>
     </div>
-    
+
     <div id="intro">
         <h2>자기소개</h2>
         <img src="스키.jpg" width="400" height="550">
         <img src="알림제.jpg" width="400" height="215">
         <p>단국대학교 소프트웨어학과 19학번 김보승</p>
-        <p></p>    
+        <p></p>
     </div>
     <div id="hobby">
         <h2>취미</h2>
@@ -124,4 +250,5 @@
 <footer>
     <p>Copyright © Kim Boseung</p>
 </footer>
+
 </html>
